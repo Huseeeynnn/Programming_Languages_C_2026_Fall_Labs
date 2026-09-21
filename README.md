@@ -105,3 +105,4 @@ By the end of the course, students will be able to:
 - Demonstrate foundational skills for later systems and software courses
 
 
+Lab 1: built with make and ran ./bin/hello successfully.
