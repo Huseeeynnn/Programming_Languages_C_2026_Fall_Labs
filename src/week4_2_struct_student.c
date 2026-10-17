@@ -14,7 +14,6 @@
 #include <stdio.h>
 #include <string.h>
 
-// Структура студента: имя, номер и оценка
 struct Student {
   char name[50];
   int id;
@@ -25,7 +24,6 @@ int main(void) {
   struct Student s1;
   struct Student s2;
 
-  // Строку в массив char нельзя присвоить через =, поэтому используем strcpy
   strcpy(s1.name, "Alice Johnson");
   s1.id = 1001;
   s1.grade = 9.1f;

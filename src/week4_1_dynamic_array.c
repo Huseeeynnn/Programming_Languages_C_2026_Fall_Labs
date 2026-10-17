@@ -24,10 +24,8 @@ int main(void) {
     return 1;
   }
 
-  // Выделяем память под n целых чисел
   arr = malloc(n * sizeof(int));
 
-  // malloc может вернуть NULL, поэтому проверяем указатель до использования
   if (arr == NULL) {
     printf("Memory allocation failed.\n");
     return 1;
@@ -37,25 +35,21 @@ int main(void) {
   for (int i = 0; i < n; i++) {
     if (scanf("%d", &arr[i]) != 1) {
       printf("Invalid input.\n");
-      // Память уже выделена, поэтому освобождаем её перед выходом
       free(arr);
       return 1;
     }
   }
 
-  // Сумму считаем в long long, чтобы не переполнить int
   long long sum = 0;
   for (int i = 0; i < n; i++) {
     sum += arr[i];
   }
 
-  // Приводим к double до деления, иначе среднее будет усечено (7 8 -> 7.00)
   double average = (double)sum / n;
 
   printf("Sum = %lld\n", sum);
   printf("Average = %.2f\n", average);
 
-  // Каждому успешному malloc соответствует free
   free(arr);
 
   return 0;

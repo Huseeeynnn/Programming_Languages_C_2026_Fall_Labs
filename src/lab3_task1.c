@@ -1,6 +1,6 @@
 /*
  * Lab 3, Task 1
- * Name: Huseyn Jamilzade
+ * Name: Huseyn
  * Student ID: 251ADB038
  *
  * Implement array algorithms:
@@ -52,7 +52,6 @@ int main(void) {
   return 0;
 }
 
-// Implement functions below
 int array_min(int arr[], int size) {
   int min = arr[0];
   for (int i = 1; i < size; i++) {

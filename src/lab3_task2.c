@@ -1,6 +1,6 @@
 /*
  * Lab 3, Task 2
- * Name: Huseyn Jamilzade
+ * Name: Huseyn
  * Student ID: 251ADB038
  *
  * Practice using pointers as function parameters.
@@ -9,7 +9,7 @@
  *   - modify_value (multiply given int by 2)
  *
  * Rules:
- *   - Use pointers to modify variables in the cgcc src/lab3_task2.c -o bin/lab3_task2 && ./bin/lab3_task2aller.
+ *   - Use pointers to modify variables in the caller.
  *   - Functions must not print anything.
  *   - swap(&a, &a) must leave a unchanged.
  *   - Do not modify main.
@@ -27,7 +27,6 @@
 
 #include <stdio.h>
 
-// Function prototypes
 void swap(int* x, int* y);
 void modify_value(int* x);
 
@@ -43,7 +42,6 @@ int main(void) {
   return 0;
 }
 
-// Implement functions below
 void swap(int* x, int* y) {
   int tmp = *x;
   *x = *y;

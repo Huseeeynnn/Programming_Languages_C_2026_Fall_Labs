@@ -1,6 +1,6 @@
 /*
  * Lab 3, Task 3
- * Name: Huseyn Jamilzade
+ * Name: Huseyn
  * Student ID: 251ADB038
  *
  * Implement basic string handling functions.
@@ -29,7 +29,6 @@
 
 #include <stdio.h>
 
-// Function prototypes
 int my_strlen(const char* str);
 void my_strcpy(char* dest, const char* src);
 
@@ -46,7 +45,6 @@ int main(void) {
   return 0;
 }
 
-// Implement functions below
 int my_strlen(const char* str) {
   int len = 0;
   while (str[len] != '\0') {
